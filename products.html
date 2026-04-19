@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produk Kainora Kids</title>
+  <meta name="description" content="Lihat semua koleksi Kainora Kids yang manis, nyaman, dan cocok untuk aktivitas harian si kecil.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Kainora Kids">
+        <span class="brand-mark">K</span>
+        <span class="brand-text"><strong>Kainora Kids</strong><small>little outfits, happy hearts</small></span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html">Beranda</a>
+        <a class="is-active" href="products.html">Produk</a>
+        <a href="group-buy.html">Beli Banyak</a>
+        <button type="button" data-open-affiliate>Affiliate / Reseller</button>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" type="button" data-open-cart>Keranjang <span class="cart-count" data-cart-count>0</span></button>
+        <button class="menu-btn" type="button" data-menu-toggle aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <a href="index.html">Beranda</a>
+      <a href="products.html">Produk</a>
+      <a href="group-buy.html">Beli Banyak</a>
+      <button type="button" data-open-affiliate>Affiliate / Reseller</button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero products-hero">
+      <div class="container narrow">
+        <span class="eyebrow">Semua produk</span>
+        <h1>Koleksi lengkap Kainora Kids</h1>
+        <p>Klik produk untuk melihat detail, pilih ukuran, dan tambahkan ke keranjang bunda.</p>
+      </div>
+    </section>
+
+    <section class="section-gap">
+      <div class="container product-grid" data-all-products></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">K</span>
+          <span class="brand-text"><strong>Kainora Kids</strong><small>little outfits, happy hearts</small></span>
+        </a>
+        <p class="footer-copy">Kainora Kids hadir untuk bunda yang mencari baju anak dengan tampilan manis, bahan nyaman, dan pengalaman belanja yang hangat.</p>
+        <p class="footer-email">Email: <a href="mailto:kainorakids@gmail.com">kainorakids@gmail.com</a></p>
+      </div>
+      <div>
+        <h3 class="footer-title">Info penting</h3>
+        <div class="footer-buttons">
+          <button type="button" data-open-info="pengiriman">Detail Pengiriman</button>
+          <button type="button" data-open-info="retur">Retur</button>
+          <button type="button" data-open-info="size">Size Guide</button>
+          <button type="button" data-open-info="privacy">Kebijakan Privasi</button>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Temukan kami</h3>
+        <div class="social-list">
+          <a data-social="instagram" target="_blank" rel="noreferrer">Instagram</a>
+          <a data-social="tiktok" target="_blank" rel="noreferrer">TikTok</a>
+          <a data-social="shopee" target="_blank" rel="noreferrer">Shopee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-chat" href="https://wa.me/6285822222430?text=Halo%20Kainora%20Kids%2C%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noreferrer">Chat admin</a>
+
+  <div class="modal" id="productModal"><div class="modal-card modal-product"><button class="modal-close" type="button" data-close-modal>×</button><div class="modal-product-grid"><div class="modal-image-wrap"><img data-product-image src="" alt=""></div><div><div class="modal-badge">Kainora Kids</div><h3 data-product-name></h3><div class="modal-price" data-product-price></div><div class="modal-rating">★ <span data-product-rating></span></div><p class="modal-desc" data-product-desc></p><div class="size-row"><span class="size-chip">S</span><span class="size-chip">M</span><span class="size-chip">L</span></div><button class="btn btn-primary full-btn" type="button" data-add-cart>Masukkan ke keranjang</button></div></div></div></div>
+  <div class="modal" id="addCartChoiceModal"><div class="modal-card small-card center-card"><button class="modal-close" type="button" data-close-modal>×</button><h3>Produk berhasil masuk ke keranjang</h3><div class="choice-actions"><button class="btn btn-primary" type="button" data-see-cart>Lihat Keranjang</button><button class="btn btn-soft" type="button" data-add-more>Tambah Produk Lain</button></div></div></div>
+  <div class="modal" id="cartModal"><div class="modal-card"><button class="modal-close" type="button" data-close-modal>×</button><h3>Keranjang belanja</h3><div class="cart-summary">Total item: <strong data-cart-items>0</strong></div><div data-cart-body></div><div class="cart-footer"><div>Total belanja <strong data-cart-total>Rp0</strong></div><a class="btn btn-primary" data-cart-checkout target="_blank" rel="noreferrer">Lanjutkan pesanan via WhatsApp</a></div></div></div>
+  <div class="modal" id="affiliateModal"><div class="modal-card small-card"><button class="modal-close" type="button" data-close-modal>×</button><h3>Gabung jadi reseller atau affiliate</h3><div class="affiliate-boxes"><article><strong>Reseller</strong><p>Cocok untuk bunda yang ingin menjual kembali produk Kainora Kids dengan harga khusus dan dukungan materi promosi.</p></article><article><strong>Affiliate</strong><p>Cocok untuk yang ingin membantu promosi dan mendapatkan komisi dari setiap penjualan yang berhasil.</p></article></div><a class="btn btn-primary full-btn" href="https://wa.me/6285822222430?text=Halo%20Kainora%20Kids%2C%20saya%20tertarik%20gabung%20jadi%20reseller%20atau%20affiliate." target="_blank" rel="noreferrer">Chat admin untuk gabung sekarang</a></div></div>
+  <div class="modal" id="infoModal"><div class="modal-card small-card"><button class="modal-close" type="button" data-close-modal>×</button><h3 data-info-title>Informasi</h3><p class="info-body" data-info-body></p></div></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
